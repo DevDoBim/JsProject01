@@ -32,7 +32,7 @@ function getData() {
         //console.log(resData[i]);
         let htmlSegment = `<div class="col">
                                 <div class="card h-100">
-                                    <img src="${resData[i].poster_path}"
+                                    <img src="https://image.tmdb.org/t/p/w500${resData[i].poster_path}"
                                         class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">${resData[i].title}</h5>
