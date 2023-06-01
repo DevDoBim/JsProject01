@@ -11,31 +11,33 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+
     <title>Document</title>
 </head>
 
 <body>
-        <h1>내일 배움 캠프 개인 프로젝트</h1>
-        <div>
-            <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요.">
-            <button id="search-button">검색</button>
-            <div id="test"></div>
-        </div>
-        <div id="mycards">
-            <div class="row row-cols-1 row-cols-md-4 g-4" id="cards-box">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://tpc.googlesyndication.com/daca_images/simgad/8684857926742249452"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 영화에 대한 설명이 들어갑니다.</p>
-                        </div>
+    <h1 class="mytitle">내일 배움 캠프 개인 프로젝트</h1>
+    <div>
+        <h2 class="search"> <input type="text" id="searchInput" onkeyup="filter()" placeholder="영화 제목을 검색해 보세요.">
+        </h2>
+        <div id="test"></div>
+    </div>
+    <div id="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="cardsBox">
+            <div class="col" onclick="alert('id 값 : ')">
+                <div class="card h-100">
+                    <img src="https://tpc.googlesyndication.com/daca_images/simgad/8684857926742249452"
+                        class="card-img-top">
+                    <div class="cardBody">
+                        <h5 class="cardTitle">영화 제목이 들어갑니다</h5><br>
+                        <p class="cardText">여기에 영화에 대한 설명이 들어갑니다.</p>
+                        <p class="Rate">Rating : 평점</p>
                     </div>
                 </div>
             </div>
         </div>
-    <footer>copyright. DevDoBim</footer>
+    </div>
+    <footer class="foot">copyright. DevDoBim</footer>
     <script src="./app.js"></script>
 </body>
 
